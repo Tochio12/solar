@@ -45,22 +45,22 @@ ol, ul {
 
 body {
 	font-family: 'Roboto', sans-serif;
-	font-weight: 300; /* loaded 300 and 700*/
+	font-weight: 300; /* loaded 300 and 700 */
+	background-color: #f6f6f2;
+	color: #333;
 }
 header {
-	border-top: 40px solid #004b8e;
+	border-top: 40px solid #8c9a5b;
 	background-image: url(../images/sun.png);
-	/*Sun from https://openclipart.org/detail/3367/decorative-sun*/
 	background-repeat: no-repeat;
 }
 header h1 {
-	color: #e05b13;
+	color: #e76f51;
 	font-size: 3rem;
-	
 	padding: .5rem 0 .5rem 60px;
 }
 header, nav, main, footer {max-width: 960px; margin: 0 auto;}
-nav {background-color: #004b8e}
+nav {background-color: #8c9a5b;}
 nav li {
 	float: left;
 	width: 25%;
@@ -72,22 +72,22 @@ nav li a {
 	padding: .5rem 0;
 	width: 100%;
 	text-align: center;
-	border-right: 1px solid #000;
+	border-right: 1px solid #6d8054;
 }
-nav li.active a {background-color: #002751;}
+nav li.active a {background-color: #6d8054;}
 main {padding: .3rem 2%; display: block;}
 main h1 {
-	color: #e05b13;
+	color: #e76f51;
 	font-size: 2rem;
 	padding-top: 1rem;
 }
 main h2 {
-	color: #e05b13;
+	color: #8c9a5b;
 	font-size: 1.5rem;
 	padding-top: 1rem;
 }
-main p{
-	line-height: 125%;
+main p {
+	line-height: 1.6;
 	padding-bottom: .25rem;
 }
 main fieldset {
@@ -95,19 +95,19 @@ main fieldset {
 	border-radius: 10px;
 	padding: .5rem 2%;
 	margin-top: 1rem;
+	background-color: #ffffff;
 }
-main fieldset legend {color:#004b8e; font-weight: 700;}
+main fieldset legend {color: #8c9a5b; font-weight: 700;}
 
 main form label {
 	display: block;
 	padding: .4rem 0;
-	font-size: .75rem;
-   
+	font-size: .85rem;
 }
 main form span {
 	display: block;
-	font-size: .7rem;
-     color: #004b8e;
+	font-size: .8rem;
+	color: #8c9a5b;
 }
 main form input {
 	width: 6rem;
@@ -124,26 +124,43 @@ main button {
 	font-size: 1rem;
 	border-radius: 10px;
 	margin-top: 1rem;
-	background: #004b8e;
-	background: linear-gradient(to bottom,  #004b8e 1%,#002751 100%);
+	background: #8c9a5b;
+	background: linear-gradient(to bottom,  #8c9a5b 1%,#6d8054 100%);
 }
 
 footer {
 	text-align: center;
-	background: #004b8e;
+	background: #8c9a5b;
 	color: #fff;
 	font-size: .75rem;
 	padding: 1rem 0;
 }
 
-
-.keepOpen{clear: both;}
+.keepOpen {clear: both;}
 
 main figure img {width: 100%;}
 
 @media only screen and (min-width: 30em) {
-   main figure {width:70%;float: right;} 
+   main figure {width:70%; float: right;} 
 }
+
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+nav.dark-mode {
+    background-color: #444;
+}
+footer.dark-mode {
+    background-color: #444;
+}
+header.dark-mode {
+    border-top-color: #555;
+}
+button {
+    cursor: pointer;
+}
+
 
 
 

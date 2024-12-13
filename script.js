@@ -88,3 +88,10 @@ function calculateSolar() {
 	document.getElementById('feedback').innerHTML=feedback;
 
 } // end of function
+
+document.getElementById('darkModeToggle').addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+    document.querySelector('nav').classList.toggle('dark-mode');
+    document.querySelector('footer').classList.toggle('dark-mode');
+    document.querySelector('header').classList.toggle('dark-mode');
+});
